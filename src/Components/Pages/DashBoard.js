@@ -11,7 +11,6 @@ import FooterCard from '../FooterCard';
 import TopSongs from '../TopSongs';
 import TopGenres2 from '../TopGenres2';
 import TopArtist2 from '../TopArtists2';
-import Topss from '../Topss';
 
 function DashBoard({ onSongSelect, songs, setSongs }) {
     const { isOpen, onToggle } = useDisclosure()
