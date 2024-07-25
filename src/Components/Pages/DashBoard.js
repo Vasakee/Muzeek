@@ -24,10 +24,10 @@ function DashBoard({ onSongSelect, songs, setSongs }) {
                         <Box flex="1" p={4} mt={{ base: 0, md: 0 }} ml={{ base: 0, md: isOpen ? '250px' : '0' }} overflowX='hidden' transition="margin-left 0.3s">
                             <Box display={{ base: 'flex', md: 'flex' }} alignItems='center' flexDir={{ base: 'column', md: 'row' }}>
                                 <Container maxW="container.xl" overflowX='hidden' py={6} p={4} color='black'>
-                                    <TopGenres2 />
-                                    <TopArtist2 />
                                     <TrendingSongs onSongSelect={onSongSelect} songs={songs} setSongs={setSongs} />
                                     <TopSongs onSongSelect={onSongSelect} songs={songs} setSongs={setSongs} />
+                                    <TopGenres2 />
+                                    <TopArtist2 />
                                 </Container>
                             </Box>
                             <Box position="relative" mb={10} width="100%" >

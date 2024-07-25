@@ -36,24 +36,6 @@ const Navbar = ({ onSidebarToggle }) => {
     const Navigate = useNavigate()
     const Notify = useToast()
 
-    /*const FetchUserData = async () => {
-        onAuthStateChanged(async (user) => {
-            console.log(user.data);
-            const docRef = doc(database, "Users", user.uid)
-            const docSnap = await getDoc(docRef)
-            if (docSnap.exists()) {
-                setuserDetails(docSnap.data())
-                console.log(docSnap.data())
-            } else {
-                console.log('User not Found')
-            }
-        })
-    }
-
-    useEffect(() => {
-        FetchUserData()
-    }, [])*/
-
     const logoutHandler = async () => {
         setLoading(true)
         try {
@@ -72,6 +54,10 @@ const Navbar = ({ onSidebarToggle }) => {
             console.log(error)
         }
     }
+
+    // useEffect(() => {
+    //     if(!userDetails?.email) Navigate('/')
+    // }, [])
 
     return (
         <Box bg="gray.800" px={4} width="100%" zIndex="1" color='white'>
@@ -97,11 +83,11 @@ const Navbar = ({ onSidebarToggle }) => {
                 <Box display={{ base: 'block', md: 'block' }} ml={4} color='black'>
                     <Menu>
                         <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
-                            <Avatar size={'sm'} cursor='pointer' name={userDetails.name} src={userDetails.profilePic} />
+                            <Avatar size={'sm'} cursor='pointer' name={userDetails?.name} src={userDetails?.profilePic} />
                         </MenuButton>
                         <MenuList>
-                            <ProfileModal name={userDetails.name} email={userDetails.email}
-                                category={userDetails.userCategory} profilePic={userDetails.profilePic}>
+                            <ProfileModal name={userDetails?.name} email={userDetails?.email}
+                                category={userDetails?.userCategory} profilePic={userDetails?.profilePic}>
                                 <MenuItem>My Profile</MenuItem>
                             </ProfileModal>
                             <MenuDivider />

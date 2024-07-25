@@ -160,15 +160,15 @@ const SignIn = () => {
                     </Grid>
                     <Stack mt={4} align="center">
                         <Checkbox id="customCheck1">
-                            Remember me  <Link color="red.500" href="sign-in.html">Forgot Password ?</Link>
+                            Remember me 
                         </Checkbox>
                         <Button colorScheme="blue" onClick={SignIn} type="submit" width="full" isLoading={loading}>
                             Sign In
             </Button>
-                        <Text textAlign="center" my={3}>
+                        {/* <Text textAlign="center" my={3}>
                             or sign in with other accounts?
-            </Text>
-                        <Flex justify="center" spacing={4}>
+            </Text> */}
+                        {/* <Flex justify="center" spacing={4}>
                             <IconButton
                                 as={Link}
                                 href="#"
@@ -201,7 +201,7 @@ const SignIn = () => {
                                 variant="outline"
                                 m={2}
                             />
-                        </Flex>
+                        </Flex> */}
                         {/*<Text mt={3} textAlign="center">
                             Don't have an Account? <RouterLink color="blue.500" to='/signup'>Sign Up</RouterLink>
                                         </Text>*/}

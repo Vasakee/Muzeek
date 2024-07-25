@@ -34,6 +34,7 @@ function App() {
   };
 
   const togglePlayPause = () => {
+    if(!currentSong) return;
     setIsPlaying(!isPlaying);
   };
 

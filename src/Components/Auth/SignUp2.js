@@ -201,10 +201,10 @@ const SignUp2 = () => {
                 <Button colorScheme="blue" type="submit" isLoading={loading} onClick={SignUp} width="full">
                     Sign Up
             </Button>
-                <Text textAlign="center" my={3}>
+                {/* <Text textAlign="center" my={3}>
                     or sign in with other accounts?
-            </Text>
-                <Flex justify="center" spacing={4}>
+            </Text> */}
+                {/* <Flex justify="center" spacing={4}>
                     <IconButton
                         as={Link}
                         href="#"
@@ -237,7 +237,7 @@ const SignUp2 = () => {
                         variant="outline"
                         m={2}
                     />
-                </Flex>
+                </Flex> */}
                 {/*<Text mt={3} textAlign="center">
                     Already have an Account? <RouterLink color="blue" to='/signin'>Sign In</RouterLink>
                             </Text>*/}

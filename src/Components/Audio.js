@@ -29,7 +29,7 @@ const AudioUploadForm = () => {
 
         toast({
             title: "File uploaded",
-            description: ${ audioFile.name } has been uploaded successfully.,
+            description:` ${audioFile.name} has been uploaded successfully`,
             status: "success",
             duration: 3000,
             isClosable: true,

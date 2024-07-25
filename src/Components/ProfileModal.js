@@ -40,7 +40,7 @@ const ProfileModal = ({ name, email, category, children, profilePic }) => {
                         <Text fontSize={{ base: '28px', md: '30px' }} fontFamily='serif'>
                             <b>Category:</b> {category}
                         </Text>
-                        {category.toLowerCase() === 'artist' && (
+                        {category?.toLowerCase() === 'artist' && (
                             <Button
                                 mt={4}
                                 colorScheme='teal'

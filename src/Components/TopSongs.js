@@ -22,11 +22,11 @@ const TopSongs = ({ onSongSelect, songs, setSongs }) => {
             </Box>
             <SimpleGrid columns={{ base: 2, md: 2, lg: 4 }} spacing={5}>
                 {songs.map(song => (
-                    <Box key={song.id} borderWidth="1px" borderRadius="md" onClick={() => onSongSelect(song)}>
+                    <Box key={song.id} borderWidth="1px" borderRadius="md" cursor={'pointer'} onClick={() => onSongSelect(song)}>
                         <HStack spacing={4}>
                             <Image src={song.picURL} alt="list-img" boxSize="55px" borderRadius="full" />
                             <VStack align="start" spacing={0}>
-                                <Link textTransform="capitalize" onClick={() => onSongSelect(song)} fontSize="lg">{song.songName}</Link>
+                                <Link textTransform="capitalize" fontSize="lg">{song.songName}</Link>
                                 <Text textTransform="capitalize" fontSize="sm">{song.songWriter}</Text>
                                 <HStack>
                                     <Icon as={FaHeadphones} w={4} h={4} />

@@ -75,6 +75,7 @@ const Footer = ({ songs, currentSong, isPlaying, togglePlayPause, setIsPlaying, 
     };
 
     const playNextSong = () => {
+        if(!currentSong) return;
         const currentIndex = songs.findIndex(song => song.id === currentSong.id);
         const nextIndex = (currentIndex + 1) % songs.length;
         setCurrentSong(songs[nextIndex]);
@@ -82,6 +83,7 @@ const Footer = ({ songs, currentSong, isPlaying, togglePlayPause, setIsPlaying, 
     };
 
     const playPreviousSong = () => {
+        if(!currentSong) return;
         const currentIndex = songs.findIndex(song => song.id === currentSong.id);
         const prevIndex = (currentIndex - 1 + songs.length) % songs.length;
         setCurrentSong(songs[prevIndex]);

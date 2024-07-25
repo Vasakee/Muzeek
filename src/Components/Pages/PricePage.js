@@ -21,7 +21,7 @@ function PricePage() {
                             <Box display={{ base: 'flex', md: 'flex' }} alignItems='center' flexDir={{ base: 'column', md: 'row' }}>
                                 <Box color='black' alignItems='center'>
                                     <Container maxW="container.xl" ml={10} >
-                                        <SimpleGrid columns={{ base: 2, md: 2, lg: 4 }} spacing={10} ml={10} textAlign="center">
+                                        {/* <SimpleGrid columns={{ base: 2, md: 2, lg: 4 }} spacing={10} ml={10} textAlign="center">
                                             <PricingCard
                                                 title="Free"
                                                 price="$0"
@@ -46,7 +46,7 @@ function PricePage() {
                                                 period="/Month"
                                                 features={['12 users included', '25 GB of storage', '24 x 7 call support', 'Help center access']}
                                             />
-                                        </SimpleGrid>
+                                        </SimpleGrid> */}
                                         <PricingTable />
                                     </Container>
                                 </Box>

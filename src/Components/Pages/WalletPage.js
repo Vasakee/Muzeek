@@ -3,20 +3,13 @@ import React from 'react'
 import { useDisclosure } from '@chakra-ui/hooks';
 import Navbar from '../Navbar'
 import Sidebar2 from '../Sidebar2'
-//import TopArtists from '../TopArtists'
-//import TopGenres from '../TopGenres'
-import TrendingSongs from '../TrendingSongs'
-import Footer from '../Footer';
+
 import FooterCard from '../FooterCard';
-import TopSongs from '../TopSongs';
-import TopGenres2 from '../TopGenres2';
-import TopArtist2 from '../TopArtists2';
-import Deactivate from '../Auth/Deactivate'
-import AddSong from '../AddSong';
 import ConnectWallet from '../ConnectWallet';
 
 function WalletPage() {
     const { isOpen, onToggle } = useDisclosure()
+
     return (
         <Flex direction='column' minHeight='100vh' >
             <Flex direction='row' flex='1'>
