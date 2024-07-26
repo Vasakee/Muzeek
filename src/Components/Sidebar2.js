@@ -50,8 +50,9 @@ const Sidebar2 = ({ isOpen, onToggle }) => {
                 display={{ md: 'Block', lg: 'Block' }}
                 bg="gray.100"
                 p={4}
-                height="100vh"
+                height="100%"
                 overflowX="hidden"
+                overflowY='auto'
                 transition="width 0.3s"
                 position="relative"
             >
