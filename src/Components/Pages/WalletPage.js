@@ -17,7 +17,7 @@ function WalletPage() {
                 <Flex direction='column' flex='1' mb={8} >
                     <Navbar onSideBarToggle={onToggle} />
                     <Box flex="1" p={4} mt={{ base: 0, md: 0 }} ml={{ base: 0, md: isOpen ? '250px' : '0' }} overflowX='hidden' transition="margin-left 0.3s">
-                        <Container maxW="container.xl" overflowX='hidden' py={6} p={4} color='black'>
+                        <Container maxW="container.xl" overflowX='hidden' py={6} p={2} color='black'>
                             <ConnectWallet />
                         </Container>
                     </Box>
