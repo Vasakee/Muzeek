@@ -6,7 +6,7 @@ function ConnectWallet() {
 
     return (
         <div>
-            <Box className="reviews" size={{ lg: 'lg', md: 'md', base: 'sm' }} width={500} mb={10} >
+            <Box className="connect" size={{ lg: 'lg', md: 'md', base: 'sm' }} width={500} mb={10} >
                 <Card>
                     <CardHeader size={cardSize} >
                         <Heading as="h4" size="md" textTransform="capitalize">Connect to your crypto wallet</Heading>
