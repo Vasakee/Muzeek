@@ -121,7 +121,6 @@ const SignIn = () => {
         }
     }
     return (
-        <Flex justify="center" align="center" height="100vh" bg="gray.100">
             <Box bg="white" p={8} rounded="lg" shadow="md" width="100%" maxW="lg">
                 <Heading as="h2" size="lg" textAlign="center" mb={2}>
                     Sign In
@@ -208,7 +207,6 @@ const SignIn = () => {
                     </Stack>
                 </form>
             </Box>
-        </Flex>
     );
 };
 
